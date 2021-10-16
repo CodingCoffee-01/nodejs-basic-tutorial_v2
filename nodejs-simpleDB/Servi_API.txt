@@ -1,0 +1,105 @@
+/*
+log( message )
+lib/servi.js:269
+Write a message to the log
+
+Parameters:
+message <String>
+to write
+
+Example
+var servi = require('servi');
+var serviapp = new servi();
+serviapp.log("something to say");
+//-------------------------------------
+Integer port( port )
+lib/servi.js:57
+Set port number to run server on
+
+Parameters:
+port <Integer>
+number
+
+Returns: <Integer>
+Returns port number
+
+Example
+var servi = require('servi');
+var serviapp = new servi();
+serviapp.port(8080);
+//-------------------------------------
+redirect( response )
+lib/response.js:111
+Set port number to run server on
+
+Parameters:
+response <String>
+Example
+request.redirect("/");
+//-------------------------------------
+respond( response )
+lib/response.js:65
+Set port number to run server on
+
+Parameters:
+response <String>
+Example
+request.respond("Thanks");
+//-------------------------------------
+route( path, callback )
+lib/servi.js:140
+Define function to execute based on requested path
+
+Parameters:
+path <String>
+callback <Function>
+function
+
+Example
+var servi = require('servi');
+var serviapp = new servi();
+serviapp.route('/',myRequestHandler);
+function myRequestHandler(request) {
+    request.respond("hello");
+}
+serviapp.start();
+//-------------------------------------
+serveFiles( path )
+lib/servi.js:230
+Define a path to directory of static files to serve
+
+Parameters:
+path <String>
+to directory of files
+
+Example
+var servi = require('servi');
+var serviapp = new servi();
+serviapp.serveFiles('public_html');
+serviapp.start();
+//-------------------------------------
+start( )
+
+lib/servi.js:85
+Starts the HTTP server
+
+Example
+var servi = require('servi');
+var serviapp = new servi();
+serviapp.start();
+//-------------------------------------
+useDatabase( database )
+lib/servi.js:246
+Define a file to use as a database. This will create a flat JSON file for datastorage
+
+Parameters:
+database <String>
+filename
+
+Example
+var servi = require('servi');
+var serviapp = new servi();
+var database = serviapp.useDatabase('mydatabasefile');
+serviapp.start();
+
+*/
