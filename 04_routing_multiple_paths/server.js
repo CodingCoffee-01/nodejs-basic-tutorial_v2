@@ -3,6 +3,11 @@ var servi = require('servi');
 var app = new servi(true);
 
 // set the port (defaults to 3000 if you leave out this line)
+console.log("this server is runnning on http://localhost:3001 ");
+console.log("this server is runnning on http://localhost:3001/one ");
+console.log("this server is runnning on http://localhost:3001/two ");
+console.log("this server is runnning on http://localhost:3001/buckle/my/shoe ");
+
 port(3001);
 
 // set up routes
@@ -20,7 +25,7 @@ function run(request) {
 function handleOne(request) {
   console.log("one");
   request.respond("thanks one");
-}           
+}
 
 function handleTwo(request) {
   console.log("two");

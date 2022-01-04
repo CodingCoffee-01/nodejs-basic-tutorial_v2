@@ -1,4 +1,5 @@
-buf = new Buffer(26);
+//buf = new Buffer(26);
+buf = Buffer.alloc(26);
 for (var i = 0 ; i < 26 ; i++) {
   buf[i] = i + 97;
 }

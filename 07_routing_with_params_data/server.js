@@ -5,6 +5,9 @@ var servi = require('servi');
 var app = new servi(true);
 
 // set the port (defaults to 3000 if you leave out this line)
+console.log("this server is runnning on http://localhost:3001/ ");
+console.log("this server is runnning on http://localhost:3001/profile/:userid (Joe , Jane , Margan ) ");
+
 port(3001);
 
 
@@ -21,7 +24,7 @@ var users = [
   {
     name:  "Morgan",
     about: "Craft beer and pickles and kale!"
-  }    
+  }
 ];
 
 // set up routes
@@ -35,7 +38,7 @@ function showHome(request){
 }
 
 function showProfile(request){
-	var id = request.params.userid; 
+	var id = request.params.userid;
 	if (id < users.length){
 		var name = users[id].name;
 		var about = users[id].about;
@@ -50,5 +53,3 @@ function showProfile(request){
 
 // start the server
 start();
-
-

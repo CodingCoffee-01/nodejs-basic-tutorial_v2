@@ -2,6 +2,26 @@
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.2",
-    "http": "^0.0.1-security"
-  }
+    "http": "^0.0.1-security",
+    "mime": "^3.0.0",
+    "servi": "^0.0.8",
+    "upper-case": "^2.0.2"
+  },
+  "name": "nodejs-basic-tutorial",
+  "description": "//  This is CodingCoffee for html javascript and nodejs  simple gitpod example",
+  "version": "1.0.0",
+  "main": "eight.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/chiyanglin/nodejs-basic-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/chiyanglin/nodejs-basic-tutorial/issues"
+  },
+  "homepage": "https://gitlab.com/chiyanglin/nodejs-basic-tutorial#readme"
 }

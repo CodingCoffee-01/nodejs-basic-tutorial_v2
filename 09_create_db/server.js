@@ -3,12 +3,14 @@ var servi = require('servi');
 var app = new servi(true);
 
 // set the port (defaults to 3000 if you leave out this line)
+console.log("this server is runnning on http://localhost:3001 ");
+
 port(3001);
 
 
 // set up a database
 // looks for a file called "people.db" or creates one if it doesn't exist
-var namesDB = useDatabase("people"); 
+var namesDB = useDatabase("people");
 
 // add some people to the db
 namesDB.add({name:"Alejandro"});
@@ -38,7 +40,7 @@ function showAll(request){
 		}
 		request.respond( namestext );
 	}
-	
+
 }
 
 start();

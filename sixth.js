@@ -1,6 +1,6 @@
 var http = require('http');
 var fs = require('fs');
-console.log("this server is runnning on http:localhost:4000");
+console.log("this server is runnning on http://localhost:4000");
 http.createServer(function (req, res) {
   fs.readFile('demo1.html', function(err, data) {
     res.writeHead(200, {'Content-Type': 'text/html'});

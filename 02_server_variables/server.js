@@ -3,6 +3,8 @@ var servi = require('servi');
 var app = new servi(true);
 
 // set the port (defaults to 3000 if you leave out this line)
+console.log("this server is runnning on http://localhost:3001 ");
+
 port(3001);
 
 // have the server keep track of a variable "count"
@@ -12,8 +14,8 @@ var count = 0;
 function run(request) {
 
   // print which path is requested
-  // console.log(request.pathname);   
-   
+  // console.log(request.pathname);
+
   count++;
   request.respond("Hello World "+count);
 }
